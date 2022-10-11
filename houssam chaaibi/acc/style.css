@@ -1,0 +1,206 @@
+:root {
+    --primaryColor : #44cec2 ;
+    --secondaryColor : #e6ae5cdc ;
+    --lightColor : #ffffff ;
+    --bgColor-1: #000000 ;
+    --bgColor-2: #000000 ;
+    --padding: 8%;
+ }  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+}
+
+/* body */
+body{
+    overflow-x: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var( --lightColor);
+    width: 100%;
+
+}
+/* home */
+.home{
+    background-color: var(--bgColor-1);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+span{
+    color: var(--primaryColor);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px;
+    padding: 20px 40px;
+    width: 100%;
+}
+.logo{
+    color: var(--lightColor);
+    font-size: 50px;
+    text-decoration: none;
+    padding-left: 60px;
+    text-transform: uppercase;      
+ }  
+li{
+    display: inline-block;
+    list-style: none;
+    margin: 1.5rem 1.5rem;
+    padding-right: 90px;
+}
+
+li a{
+    color: var(--lightColor);
+    font-size: 35px;
+    text-decoration: none;
+    padding: 0 12px;
+    transition: 0.3s;
+}
+.logo a{
+    color: var(--lightColor);
+    font-size: 50px;
+    text-decoration: none;
+    padding: 12px 24px;
+    
+}
+li a:hover, .active{
+    background-color: var(--lightColor);
+    border-radius: 20px;
+    color: var(--bgColor-1);
+}
+/* content */
+
+.content {
+  flex-grow: 1;
+  padding: 0 var(--padding);
+  background-color: var(--bgColor-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.container_texet{
+    position: relative;
+    display: block;
+    /* bottom: 10px; */
+}
+
+p{
+    color: var(--lightColor);
+    letter-spacing: 1px;
+    line-height: 2rem;
+    font-size: 30px;
+    padding-top: 2.2rem;
+    line-height: 40px;
+    width: 40%;
+}
+/* ... home......................................................................................*/
+.home .container_images{
+    width: 45%;
+    height: 70%;
+    position: relative;
+    align-self: flex-end;
+    right: 20%;
+    top: -20%;
+}
+.home .container_images img{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    transition:  bottom 1.2s, left 1.2s;
+}
+.home .container_images:hover .w{
+    bottom: 6%;
+} 
+.home .container_images:hover .m{
+    left: 70%;
+} 
+/* Introduction............................................................................. */
+
+.Introduction{
+    background-color: var(--bgColor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+}
+
+.Introduction .container_texet{
+    width: 35%;
+}
+
+h1{
+    color: var(--secondaryColor);
+    font-size: 50px;
+    }
+/* login.................................. */
+.box{
+    background-color: #3d2929;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .box input[type = "email"],.box input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  .box input[type = "email"]:focus,.box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+  }
+  .box input[type = "button"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .box input[type = "button"]:hover{
+    background: #2ecc71;
+  }
+  h2{
+    font-size: 50px;
+    margin: auto;
+  }
+
+  

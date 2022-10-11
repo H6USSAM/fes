@@ -1,0 +1,103 @@
+:root {
+    --primaryColor : #44cec2 ;
+    --secondaryColor : #e6ae5cdc ;
+    --lightColor : #ffffff ;
+    --bgColor-1: #171a1c ;
+    --bgColor-2: #22282a ;
+    --padding: 8%;
+ }  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body{
+    background-color: #111;
+    overflow-x: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var( --lightColor);
+    /* width: 100%; */
+    /* height: 100vh; */
+    font-family: 'Itim', cursive;
+}
+/* home */
+span{
+    color: var(--primaryColor);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+    padding: 20px 40px;
+    width: 100%;
+}
+.logo{
+    color: var(--lightColor);
+    font-size: 50px;
+    text-decoration: none;
+    padding-left: 60px;
+    text-transform: uppercase;      
+ }  
+li{
+    display: inline-block;
+    list-style: none;
+    margin: 1.5rem 1.5rem;
+    padding-right: 90px;
+}
+li a{
+    color: var(--lightColor);
+    font-size: 35px;
+    text-decoration: none;
+    padding: 0 12px;
+    transition: 0.3s;
+}
+.logo a{
+    color: var(--lightColor);
+    font-size: 50px;
+    text-decoration: none;
+    padding: 12px 24px;
+}
+li a:hover, .active{
+    background-color: var(--lightColor);
+    border-radius: 20px;
+    color: var(--bgColor-1);
+}
+p{
+    color: var(--lightColor);
+    letter-spacing: 1px;
+    line-height: 2rem;
+    font-size: 18px;
+    padding-top: 2.2rem;
+    line-height: 40px;
+    width: 80%;
+}
+/* Introduction............................................................................. */
+.Introduction{
+    background-color: var(--bgColor-2);
+    padding: 1rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Introduction .container_images{
+    width: 35%; 
+}
+.Introduction .container_images img{
+    width: 100%;
+    padding-top: 50px;
+}
+h6 {
+    font-size: 36px;
+    cursor: 0.12rem;
+    letter-spacing: pointer;
+    color: var(--secondaryColor);
+    padding-top: 30px;
+}
+.Introduction .container_texet{
+    width: 35%;
+}
